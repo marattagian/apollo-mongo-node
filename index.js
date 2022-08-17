@@ -1,9 +1,13 @@
 const app = require('./app')
 const createHttpError = require('http-errors')
-const { ApolloServer } = require('apollo-server-express')
 
+const { ApolloServer } = require('apollo-server-express')
 const { typeDefs } = require('./apollo/typeDefs')
 const { resolvers } = require('./apollo/resolver')
+
+const { connectDB } = require('./database/index')
+
+connectDB()
 
 async function main() {
   try {
