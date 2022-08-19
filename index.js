@@ -1,5 +1,6 @@
 const app = require('./app')
 const createHttpError = require('http-errors')
+require('dotenv').config()
 
 const { ApolloServer } = require('apollo-server-express')
 const { typeDefs } = require('./apollo/typeDefs')
@@ -25,8 +26,8 @@ async function main() {
       res.render('error')
     })
     
-    app.listen(3000, () => {
-      console.log("Server is running on port", 3000)
+    app.listen(process.env.PORT || 3000, () => {
+      console.log("Server is running on port", process.env.PORT || 3000)
     })
   } catch (error) {
     console.error("Unable to start application", error)
