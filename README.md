@@ -72,11 +72,4 @@ query {
 
 ## Try it
 
-You can check the [live demo]().
-
-<!-- ### Alternatively -->
-<!---->
-<!-- You can run it locally with docker if you have docker and docker compose installed on your machine -->
-<!---->
-<!-- ```bash -->
-<!-- ``` -->
+You can check it [here](https://studio.apollographql.com/sandbox/explorer), rember to add the following link as the endpoint https://apollo-mongo-node-production.up.railway.app/graphql
