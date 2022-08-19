@@ -72,4 +72,4 @@ query {
 
 ## Try it
 
-You can check it [here](https://studio.apollographql.com/sandbox/explorer), rember to add the following link as the endpoint https://apollo-mongo-node-production.up.railway.app/graphql
+You can check it [here](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fapollo-mongo-node-production.up.railway.app%2Fgraphql)
